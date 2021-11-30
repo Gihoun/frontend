@@ -24,3 +24,19 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.duoc-imagen{
+    --background: none;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.adsttc.com%2Fmedia%2Fimages%2F5127%2F080a%2Fb3fc%2F4b11%2Fa700%2F09a8%2Flarge_jpg%2F1842300711_img_1255.jpg%3F1414347878&f=1&nofb=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.duoc-background{
+    --background: rgb(1,46,85);
+}
+.duoc-create{
+    --background: none;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.8MC47c6AC76dWiYqwh853wHaER%26pid%3DApi&f=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

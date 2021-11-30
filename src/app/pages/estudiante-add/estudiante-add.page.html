@@ -1,0 +1,80 @@
+<app-standar-header [pageTitle]="Title"></app-standar-header>
+<ion-content class="duoc-create">
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-item lines="none" color="light">
+        <ion-label class="ion-text-start">
+          <ion-card-title>Ingresa tus Datos:</ion-card-title>
+        </ion-label>
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content>
+      <form action="">
+        <ion-item class="ion-margin-bottom raditem" color="light">
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input
+            type="text"
+            placeholder="Ingrese su Nombre"
+            #firstName
+          ></ion-input>
+        </ion-item>
+        <ion-item class="ion-margin-bottom raditem">
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input
+            type="text"
+            placeholder="Ingrese su Apellido"
+            #lastName
+          ></ion-input>
+        </ion-item>
+        <ion-item class="ion-margin-bottom raditem" color="light">
+          <ion-label position="floating">Fecha Nacimiento</ion-label>
+          <ion-datetime
+            displayFormat="DD/MM/YYYY"
+            min="1940-03-14"
+            max="2012-12-31"
+            cancel-text="Cancelar"
+            done-text="Ok"
+            #birth
+          ></ion-datetime>
+        </ion-item>
+        <ion-item class="ion-margin-bottom raditem">
+          <ion-label position="floating">Correo Electronico</ion-label>
+          <ion-input
+            type="text"
+            placeholder="Ingrese su Email"
+            #uMail
+          ></ion-input>
+        </ion-item>
+        <ion-item class="ion-margin-bottom raditem" color="light">
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input
+            type="password"
+            placeholder="Ingrese su Contraseña"
+            #pass
+          ></ion-input>
+        </ion-item>
+
+        <ion-button
+          shape="round"
+          strong="true"
+          fill="solid"
+          class="back-buttonClean"
+          slot="start"
+          type="reset"
+          >Limpiar</ion-button
+        >
+        <ion-button
+          class="ion-margin-end"
+          shape="round"
+          strong="true"
+          fill="solid"
+          class="back-buttonCreate"
+          slot="end"
+          (click)="testeoLogin(firstName,lastName,uMail,pass,birth)"
+          >Registrar</ion-button
+        >
+      </form>
+    </ion-card-content>c
+  </ion-card>
+</ion-content>
+<app-standar-footer></app-standar-footer>

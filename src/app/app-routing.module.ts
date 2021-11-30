@@ -4,12 +4,36 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'list-alumnos',
+    loadChildren: () => import('./pages/list-alumnos/list-alumnos.module').then( m => m.ListAlumnosPageModule)
+  },
+  {
+    path: 'recuperar',
+    loadChildren: () => import('./pages/recuperar/recuperar.module').then( m => m.RecuperarPageModule)
+  },
+  {
+    path: 'estudiante-add',
+    loadChildren: () => import('./pages/estudiante-add/estudiante-add.module').then( m => m.EstudianteAddPageModule)
+  },
+  {
+    path: 'alumno',
+    loadChildren: () => import('./pages/alumno/alumno.module').then( m => m.AlumnoPageModule)
+  },
+  {
+    path: 'docente',
+    loadChildren: () => import('./pages/docente/docente.module').then( m => m.DocentePageModule)
+  },
+  {
+    path: 'qrscanner',
+    loadChildren: () => import('./pages/qrscanner/qrscanner.module').then( m => m.QrscannerPageModule)
   },
 ];
 

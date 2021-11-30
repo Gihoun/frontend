@@ -1,0 +1,20 @@
+<app-home-header></app-home-header>
+<ion-content [fullscreen]="true" class="duoc-imagen">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Código creado</ion-card-title>
+      <ion-card-subtitle>Presenta!!</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content class="ion-text-center">
+      <ngx-qrcode qrc-element-type="url" [(value)]="qrURL" qrc-version="40">
+      </ngx-qrcode>
+      <ion-button class="back-buttonexit ion-margin-bottom" shape="round" strong="true" fill="solid" expand="block"
+      slot="start"
+      (click)="back()">
+      Volver
+    </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<app-standar-footer></app-standar-footer>

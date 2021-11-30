@@ -1,0 +1,23 @@
+.ion-margin-bottom{
+    margin-bottom: 10px;
+}
+.raditem{
+    border-radius: 5px;
+    border: 2px solid  gray;
+}
+
+.back-buttonCreate {
+    --background: rgb(127, 240, 83);
+  }
+  
+  .back-buttonCreate:hover {
+    --background: rgba(216, 216, 210, 0.815);
+  }
+  
+  .back-buttonClean {
+    --background: rgb(221, 202, 33);
+  }
+  
+  .back-buttonClean:hover {
+    --background: rgba(216, 216, 210, 0.815);
+  }

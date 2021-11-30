@@ -1,0 +1,39 @@
+<app-standar-header [pageTitle]="Title" [icono]="icono"></app-standar-header>
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col style="text-align: center">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimage.net%2Fwp-content%2Fuploads%2F2018%2F06%2Fusuario-silueta-png-2.png&f=1&nofb=1"
+          style="width: 250px; height: 150px"
+        />
+      </ion-col>
+    </ion-row>
+    <ion-item lines="none">
+      <h5>Nombre: {{usuario[0].fName}} {{usuario[0].lName}}</h5>
+    </ion-item>
+    <ion-item lines="none">
+      <p style="font-size: medium">Email: {{usuario[0].uMail}}</p>
+    </ion-item>
+    <ion-item lines="none">
+      <p style="font-size: medium">Rol: {{rol}}</p>
+    </ion-item>
+    <ion-item>
+      <p>Fecha Nac:</p>
+      <ion-datetime
+        displayFormat="DD/MM/YYYY"
+        readonly="true"
+        value="{{usuario[0].uBirth}}"
+      ></ion-datetime>
+    </ion-item>
+    <ion-row class="ion-text-justify">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+        officiis! Adipisci perferendis doloremque blanditiis, nulla autem
+        quisquam? Repellendus reiciendis corrupti adipisci molestiae fugiat rem
+        neque, reprehenderit voluptate, velit officia in.
+      </p>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<app-standar-footer></app-standar-footer>
